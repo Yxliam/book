@@ -1,0 +1,24 @@
+<view>
+    <view class="morebook-item">
+        <view class="morebook-img-item">
+            <image class="morebook-img" src="{{bookDetail.book.imgUrl}}"/>
+        </view>
+        <view class="r-cont">
+            <view class="morebook-title">{{bookDetail.book.name}}</view>
+            <view class="morebook-detail">作者:{{bookDetail.book.author}}</view>
+            <view class="morebook-pf">豆瓣评分:{{bookDetail.book.doubanScore}}</view>
+        </view>
+   </view>
+    <view class="bookDetail-tag" >
+        <view class="bookDetail-tag-title">分类标签</view>
+        <view class="bookDetail-tag-type" wx:for="{{bookTags}}" data-tag="{{item}}" bindtap="goBookTag">{{item}}</view>
+    </view>
+    <view class="bookDetail-content" wx:if="{{bookContent}}">
+        <view class="bookDetail-content-title">内容简介</view>
+        <view class="bookDetail-content-info {{isShowPartContent ? 'text-overflow' : ''}}">
+            {{bookContent}}
+        </view>
+        <view wx:if="{{isShowPartContent}}" class="bookDetail-show-all" bindtap="doShowAllContent">展开全文</view>
+        <view wx:if="{{!isShowPartContent}}" class="bookDetail-show-all" bindtap="doShowAllContent">收起全文</view>
+    </view>
+</view>

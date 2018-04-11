@@ -1,0 +1,18 @@
+<view class="morebook">
+    <view class="morebook-list">
+       <view class="morebook-item" wx:for="{{moreBookList}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="goBookDetail">
+            <view class="morebook-img-item">
+                <image class="morebook-img" src="{{item.imgUrl}}"/>
+            </view>
+            <view class="r-cont">
+                <view class="morebook-title">{{item.name}}</view>
+                <view class="morebook-detail">{{item.content}}</view>
+                <view class="morebook-pf">豆瓣评分:{{item.doubanScore}}</view>
+            </view>
+       </view>
+       <view class="load-more" bindtap="getMoreBookTypeList">
+            {{loadMore}}
+       </view>
+    </view>
+
+</view>

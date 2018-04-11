@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/bookCity/bookCity",
+    "pages/bookList/bookList",
+    "pages/userCenter/userCenter",
+    "pages/bookListDetail/bookListDetail",
+    "pages/moreBook/moreBook",
+    "pages/bookDetail/bookDetail",
+    "pages/bookType/bookType"
+  ],
+  "window":{
+    "backgroundColor":"#f6f6f6",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ff8862",
+    "navigationBarTitleText": "书城",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#f6f6f6",
+    "color": "#999",
+    "selectedColor": "#ff8862",
+    "borderStyle": "white",
+    "list": [{
+      "selectedIconPath": "assets/home-light.png",
+      "iconPath": "assets/home.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "assets/find-light.png",
+      "iconPath": "assets/find.png",
+      "pagePath": "pages/bookCity/bookCity",
+      "text": "书城"
+    },
+    {
+      "selectedIconPath": "assets/market-light.png",
+      "iconPath": "assets/market.png",
+      "pagePath": "pages/bookList/bookList",
+      "text": "书单"
+    },
+    {
+      "selectedIconPath": "assets/more-light.png",
+      "iconPath": "assets/more.png",
+      "pagePath": "pages/userCenter/userCenter",
+      "text": "我的"
+    }]
+  }
+}

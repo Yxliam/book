@@ -1,0 +1,11 @@
+.user-box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.user-author{
+    margin:40rpx;
+    width:200rpx;
+    height:200rpx;
+    border-radius: 50%;
+}

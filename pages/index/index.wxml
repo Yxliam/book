@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="index-wrap">
+  <!-- 精品图书 -->
+    <view class="index-book">
+        <view class="index-book-header">
+            <view class="index-book-text">精品图书</view>
+            <view class="index-book-more" data-category="精品图书" data-type="GOOD" bindtap="goMoreBook">更多>></view>
+        </view>
+        <view class="index-book-list">
+             <view class="index-book-item" wx:for="{{goodBookList}}" wx:key="1">
+                <image class="index-book-item-img" src="{{item.imgUrl}}"/>
+                <view class="index-book-item-text">{{item.name}}</view>
+             </view>
+            
+        </view>
+    </view>
+    <!-- 随便看看 -->
+    <view class="index-book">
+        <view class="index-book-header">
+            <view class="index-book-text">随便看看</view>
+            <view class="index-book-more" bindtap="goMoreBook">更多>></view>
+        </view>
+        <view class="index-book-list">
+             <view class="index-book-item" wx:for="{{hotBookList}}" wx:key="1">
+                <image class="index-book-item-img" src="{{item.imgUrl}}"/>
+                <view class="index-book-item-text">{{item.name}}</view>
+             </view>
+            
+        </view>
+    </view>
+
+     <!-- 最新上架 -->
+     <view class="index-book">
+        <view class="index-book-header">
+            <view class="index-book-text">最新上架</view>
+            <view class="index-book-more">更多>></view>
+        </view>
+        <view class="index-book-list">
+             <view class="index-book-item" wx:for="{{newBookList}}" wx:key="1">
+                <image class="index-book-item-img" src="{{item.imgUrl}}"/>
+                <view class="index-book-item-text">{{item.name}}</view>
+             </view>
+            
+        </view>
+    </view>
+</view>

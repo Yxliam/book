@@ -1,0 +1,54 @@
+/**index.wxss**/
+page{
+  background: #dedede;
+  
+}
+.index-book{
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 20rpx 25rpx;
+  width: 700rpx;
+  position: relative;
+}
+.index-book-text{
+  font-size: 30rpx;
+  color: #323233;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+}
+.index-book-more{
+  color: #ff8862;
+  font-size:30rpx;
+  float: right;
+}
+.index-book-list{
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.index-book-item{
+  display: inline-block;
+  width: 220rpx;
+  margin: 13rpx 0;
+  margin-right:10rpx;
+}
+.index-book-item:last-child{
+  margin-right: 0;
+}
+.index-book-item-img{
+  width:220rpx;
+  height:300rpx;
+}
+.index-book-item-text{
+  width: 195rpx;
+  padding: 0 10rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+  font-size: 28rpx;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-align: center;
+}
